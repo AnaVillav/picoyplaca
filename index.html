@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pico y Placa</title>
+    <link rel="shortcut icon" type="image/jpg" href="assets/car.png" />
+
+    <script src="pixi/pixi.min.js"></script>
+    <script src="pixi/gsap.js"></script>
+    <script src="webfontloader/webfontloader.js"></script>
+
+
+
+    <link rel= "stylesheet" href="css/style.css"></link>
+</head>
+
+<body style="background-color: white;">
+
+    <div id="appPixi" class="inner"> </div>
+    <div id ="info">
+    <h2> Ingresa tus datos para consultar tu movilidad.</h2>
+    <form>
+        <input type="text" id= "licenseplate" maxlength= "7" placeholder = "Ingresa tu placa" ><br><br>
+        <input type="date" id= "date"><br><br>
+        <input type="time" id= "time"><br>
+
+        
+    <span id = "missingInfo"> información pendiente</span><br>
+        
+    </form>
+    
+    <button class= "button" id= "consult">Consultar</button>
+    <div>
+        <div id="modalResolution" class="modal">
+
+            <div class="modal-content">
+                <div id="close">&times;</div>
+                <img class="sign" id= "feedbackIcon"src="assets/yes.png" width="1" height="1">
+                <h3 id = "feedback">Puedes movilizarte el día xxxxx a las xxxxx</h3>
+            </div>
+          
+          </div>
+
+    <script type="text/javascript" src="index.js"></script>
+
+</body>
+
+
+</html>
