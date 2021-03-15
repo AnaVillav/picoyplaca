@@ -300,12 +300,12 @@ function collectData() {
 function checkMobility(_lastcharacter, _day, _time) {
 
     if (_day < 5) {
-        if (_time > "06:00:00" && _time < "20:00:00") {
+        if (_time > "07:00:00" && _time < "09:30:00" || _time > "16:00:00" && _time < "19:30:00" ) {
 
             switch (_day) {
                 case 0:
 
-                    if (_lastcharacter < 4) {
+                    if (_lastcharacter > 0 && _lastcharacter < 3) {
                         return false;
                     } else {
                         return true;
@@ -313,28 +313,28 @@ function checkMobility(_lastcharacter, _day, _time) {
 
                 case 1:
 
-                    if (_lastcharacter > 1 && _lastcharacter < 6) {
+                    if (_lastcharacter > 2 && _lastcharacter < 5) {
                         return false;
                     } else {
                         return true;
                     }
                 case 2:
 
-                    if (_lastcharacter > 3 && _lastcharacter < 8) {
+                    if (_lastcharacter > 4 && _lastcharacter < 7) {
                         return false;
                     } else {
                         return true;
                     }
 
                 case 3:
-                    if (_lastcharacter > 5 && _lastcharacter < 10) {
+                    if (_lastcharacter > 6 && _lastcharacter < 9) {
                         return false;
                     } else {
                         return true;
                     }
 
                 case 4:
-                    if (_lastcharacter > 7 && _lastcharacter < 10 || _lastcharacter == 0 || _lastcharacter == 1) {
+                    if (_lastcharacter > 8 || _lastcharacter == 0) {
                         return false;
                     } else {
                         return true;
